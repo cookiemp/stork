@@ -95,6 +95,141 @@ button {
   margin-right: 5px;
 }
 
+/* Stork P2P File Transfer UI Styles */
+.section {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.action-button {
+  background-color: #396cd8;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.action-button:hover:not(:disabled) {
+  background-color: #2d5aa0;
+}
+
+.action-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.file-info {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #495057;
+  word-break: break-all;
+}
+
+.code-display {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f0f8ff;
+  border: 2px solid #396cd8;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.code-display h3 {
+  margin: 0 0 10px 0;
+  color: #396cd8;
+}
+
+.code-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.code-box code {
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  font-weight: bold;
+  color: #396cd8;
+  letter-spacing: 1px;
+  border: 1px solid #d0d7de;
+}
+
+.copy-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: #218838;
+}
+
+.receive-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.code-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.code-input:focus {
+  outline: none;
+  border-color: #396cd8;
+  box-shadow: 0 0 0 2px rgba(57, 108, 216, 0.2);
+}
+
+.status {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.status p {
+  margin: 0;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     color: #f6f6f6;
