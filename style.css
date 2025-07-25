@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.stork-app {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.stork-header {
+  margin-bottom: 40px;
+}
+
+.stork-header img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.stork-header h1 {
+  font-size: 2.5rem;
+  color: #2563eb;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.stork-header p {
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+.main-screen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.panel {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: white;
+  padding: 40px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-decoration: none;
+}
+
+.panel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(59, 130, 246, 0.3);
+}
+
+.panel.receive {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.panel.receive:hover {
+  box-shadow: 0 15px 30px rgba(16, 185, 129, 0.3);
+}
+
+.panel-icon {
+  margin-bottom: 20px;
+}
+
+.panel h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.panel p {
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.flow {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.back-button {
+  align-self: flex-start;
+  background: transparent;
+  border: 2px solid #e5e7eb;
+  color: #6b7280;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.file-drop-zone {
+  border: 3px dashed #d1d5db;
+  border-radius: 15px;
+  padding: 60px 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+.file-drop-zone:hover {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.upload-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.file-drop-zone h2 {
+  font-size: 1.5rem;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.browse-link {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+.receive-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.receive-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.receive-form h2 {
+  font-size: 1.5rem;
+  color: #1f2937;
+  margin-bottom: -10px;
+}
+
+.receive-form p {
+  color: #6b7280;
+}
+
+.ticket-input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: monospace;
+  transition: border-color 0.3s ease;
+}
+
+.ticket-input:focus {
+  outline: none;
+  border-color: #10b981;
+}
+
+.download-button {
+  width: 100%;
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.download-button:hover:not(:disabled) {
+  background: #059669;
+  transform: translateY(-2px);
+}
+
+.download-button:disabled {
+  background: #d1d5db;
+  color: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .main-screen {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .stork-app {
+    padding: 30px;
+    margin: 10px;
+  }
+  
+  .panel {
+    padding: 30px 20px;
+  }
+}

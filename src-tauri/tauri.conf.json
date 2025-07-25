@@ -1,21 +1,28 @@
 {
   "productName": "Stork",
   "version": "0.1.0",
-  "identifier": "com.example.stork",
+  "identifier": "com.stork.dev",
   "build": {
-    "beforeDevCommand": "pnpm dev",
-    "beforeBuildCommand": "pnpm build",
-    "devUrl": "http://localhost:1420",
-    "frontendDist": "../dist"
+    "beforeDevCommand": "pnpm run dev",
+    "beforeBuildCommand": "pnpm run build",
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:1420"
   },
   "app": {
     "windows": [
       {
-        "title": "Stork",
+        "title": "Stork - Simple File Transfer",
         "width": 800,
-        "height": 600
+        "height": 650,
+        "resizable": true,
+        "fullscreen": false,
+        "minWidth": 680,
+        "minHeight": 580
       }
-    ]
+    ],
+    "security": {
+      "csp": null
+    }
   },
   "bundle": {
     "active": true,
