@@ -53,15 +53,17 @@ TECHNICAL DETAILS
 - Framework: Flutter 3.32.8
 - Architecture: 64-bit
 - Port: 8080 (default)
-- File Hash (SHA256): C9B5804A4DF12307816B0DB182B48866845540A127BBFE5EC335BF82F115CEB3
+- File Hash (SHA256): DDC7757A0B33E42D33A95508F0E24BF0F586FFDBBA18864119829A823226BE71
 - Custom Stork Icon: Included
 
 WHAT'S NEW IN THIS BUILD
 ------------------------
+- App now opens maximized for optimal screen utilization
 - Added high-resolution custom icon for professional appearance
 - Updated app icon for Windows, Android, iOS, macOS, Linux, and Web
 - Enhanced Windows icon with improved visibility and quality
 - Optimized icon rendering for all platforms
-- Same great functionality with improved visual identity
+- Added onboarding debug utilities for development testing
+- Same great functionality with improved visual identity and user experience
 
 2025 Stork P2P - Secure File Transfer Made Simple
