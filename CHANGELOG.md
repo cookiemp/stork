@@ -29,6 +29,7 @@ This release represents a complete rewrite of Stork P2P from the previous Tauri-
 - Transfer History: Complete audit trail of all file transfers
 - Onboarding Flow: First-time user guidance system
 - Empty States: Helpful guidance and illustrations
+- Maximized Window: App opens in maximized state for optimal screen utilization
 
 #### High Performance Features
 - Large File Support: Efficient chunked transfers with resume capability

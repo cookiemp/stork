@@ -42,7 +42,7 @@ This is a production-ready release featuring a complete rewrite from the previou
 - **Security**: RSA-2048 + AES-256-GCM (industry standard)
 - **Network Protocol**: HTTP with multipart uploads for chunked transfers
 - **Discovery**: mDNS with manual IP fallback
-- **File Hash (SHA256)**: `C9B5804A4DF12307816B0DB182B48866845540A127BBFE5EC335BF82F115CEB3`
+- **File Hash (SHA256)**: `DDC7757A0B33E42D33A95508F0E24BF0F586FFDBBA18864119829A823226BE71`
 
 ## Performance Metrics
 - **Startup Time**: ~2 seconds (cold start)
@@ -59,12 +59,14 @@ This is a production-ready release featuring a complete rewrite from the previou
 - **Web**: Architecture ready, PWA implementation pending
 
 ## What's New in This Build
+- **Maximized Window on Startup**: App now opens in maximized state for optimal screen utilization
 - Added high-resolution custom icon for professional appearance
 - Updated app icon for all target platforms with improved visibility
 - Enhanced Windows icon size and quality for better user experience
 - Complete Flutter rewrite with enterprise security
 - Production-ready user interface with Material 3 design
 - Comprehensive transfer history and audit logging
+- Added onboarding debug utilities for development testing
 
 ## Migration from Previous Versions
 This release completely replaces the previous Tauri-based implementation with significant improvements:
