@@ -21,8 +21,10 @@ import 'widgets/multi_file_picker.dart';
 import 'widgets/batch_transfer_progress.dart';
 import 'screens/transfer_history_screen.dart';
 import 'screens/security_settings_screen.dart';
+import 'screens/onboarding_screen.dart';
 import 'widgets/pin_entry_dialog.dart';
 import 'package:cross_file/cross_file.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -66,10 +68,83 @@ class LocalP2PApp extends StatelessWidget {
           // Add theme animation duration for smoother transitions
           themeAnimationDuration: const Duration(milliseconds: 300),
           themeAnimationCurve: Curves.easeInOut,
-          home: HomeScreen(themeService: themeService),
+          home: AppRouter(themeService: themeService),
         );
       },
     );
+  }
+}
+
+/// Router that handles onboarding flow
+class AppRouter extends StatefulWidget {
+  final ThemeService themeService;
+  
+  const AppRouter({super.key, required this.themeService});
+  
+  @override
+  State<AppRouter> createState() => _AppRouterState();
+}
+
+class _AppRouterState extends State<AppRouter> {
+  bool _showOnboarding = true;
+  bool _isLoading = true;
+  
+  @override
+  void initState() {
+    super.initState();
+    _checkOnboardingStatus();
+  }
+  
+  Future<void> _checkOnboardingStatus() async {
+    try {
+      final shouldShow = await _shouldShowOnboarding();
+      setState(() {
+        _showOnboarding = shouldShow;
+        _isLoading = false;
+      });
+    } catch (e) {
+      debugPrint('Error checking onboarding status: $e');
+      setState(() {
+        _showOnboarding = false; // Default to not showing onboarding on error
+        _isLoading = false;
+      });
+    }
+  }
+  
+  void _completeOnboarding() {
+    setState(() {
+      _showOnboarding = false;
+    });
+  }
+  
+  /// Check if onboarding should be shown
+  Future<bool> _shouldShowOnboarding() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      return !(prefs.getBool('onboarding_completed') ?? false);
+    } catch (e) {
+      debugPrint('Error checking onboarding status: $e');
+      return false; // Default to not showing onboarding on error
+    }
+  }
+  
+  @override
+  Widget build(BuildContext context) {
+    if (_isLoading) {
+      return const Scaffold(
+        body: Center(
+          child: CircularProgressIndicator(),
+        ),
+      );
+    }
+    
+    if (_showOnboarding) {
+      return OnboardingScreen(
+        onComplete: _completeOnboarding,
+      );
+    }
+    
+    return HomeScreen(themeService: widget.themeService);
   }
 }
 
