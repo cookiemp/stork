@@ -39,6 +39,9 @@ class Win32Window {
   // Show the current window. Returns true if the window was successfully shown.
   bool Show();
 
+  // Show the current window maximized. Returns true if the window was successfully shown.
+  bool ShowMaximized();
+
   // Release OS resources associated with window.
   void Destroy();
 

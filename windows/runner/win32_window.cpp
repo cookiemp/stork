@@ -153,6 +153,10 @@ bool Win32Window::Show() {
   return ShowWindow(window_handle_, SW_SHOWNORMAL);
 }
 
+bool Win32Window::ShowMaximized() {
+  return ShowWindow(window_handle_, SW_SHOWMAXIMIZED);
+}
+
 // static
 LRESULT CALLBACK Win32Window::WndProc(HWND const window,
                                       UINT const message,
