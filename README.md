@@ -1,4 +1,4 @@
-# 🚀 Stork P2P File Transfer
+# Stork P2P File Transfer
 
 **A secure, fast, and user-friendly peer-to-peer file transfer application built with Flutter**
 
@@ -9,39 +9,39 @@
 
 ---
 
-## ✨ **Features**
+## Features
 
-### 🔐 **Enterprise-Grade Security**
-- **End-to-End Encryption**: AES-256-GCM with RSA-2048 key exchange
-- **PIN Protection**: Device-level authentication and authorization
-- **Perfect Forward Secrecy**: Session-specific encryption keys
-- **Trusted Peer Management**: Secure peer approval and trust system
-- **Transfer Approval**: Manual authorization for enhanced security
+### Enterprise-Grade Security
+- End-to-End Encryption: AES-256-GCM with RSA-2048 key exchange
+- PIN Protection: Device-level authentication and authorization
+- Perfect Forward Secrecy: Session-specific encryption keys
+- Trusted Peer Management: Secure peer approval and trust system
+- Transfer Approval: Manual authorization for enhanced security
 
-### 🌟 **Modern User Experience**
-- **Material 3 Design**: Beautiful, responsive UI with dark/light themes
-- **Drag & Drop Support**: Intuitive multi-file selection and sending
-- **Real-Time Progress**: Live transfer progress with visual feedback
-- **System Integration**: Native notifications and taskbar progress
-- **Transfer History**: Complete audit trail of all file transfers
+### Modern User Experience
+- Material 3 Design: Responsive UI with dark/light themes
+- Drag & Drop Support: Intuitive multi-file selection and sending
+- Real-Time Progress: Live transfer progress with visual feedback
+- System Integration: Native notifications and taskbar progress
+- Transfer History: Complete audit trail of all file transfers
 
-### ⚡ **High Performance**
-- **Large File Support**: Efficient chunked transfers with resume capability
-- **Multi-File Batches**: Concurrent transfer management (up to 3 simultaneous)
-- **Smart Compression**: Automatic ZIP compression with optimization
-- **Memory Efficient**: <100MB usage even for large file transfers
-- **Network Adaptive**: Automatic peer discovery with manual fallback
+### High Performance
+- Large File Support: Efficient chunked transfers with resume capability
+- Multi-File Batches: Concurrent transfer management (up to 3 simultaneous)
+- Smart Compression: Automatic ZIP compression with optimization
+- Memory Efficient: <100MB usage even for large file transfers
+- Network Adaptive: Automatic peer discovery with manual fallback
 
-### 🌐 **Cross-Platform Ready**
-- **Windows**: ✅ Production ready
-- **Android**: 🔄 In development
-- **macOS**: 🔄 Planned
-- **Linux**: 🔄 Planned
-- **Web**: 🔄 Planned
+### Cross-Platform Ready
+- Windows: Production ready
+- Android: In development
+- macOS: Planned
+- Linux: Planned
+- Web: Planned
 
 ---
 
-## 🚀 **Quick Start**
+## Quick Start
 
 ### **Prerequisites**
 - Windows 10/11 (for Windows build)
@@ -74,9 +74,9 @@
 
 ---
 
-## 📖 **How to Use**
+## How to Use
 
-### **Sending Files**
+### Sending Files
 
 #### Method 1: Direct Send
 1. Enter target IP address in the input field
@@ -93,23 +93,23 @@
 2. Select target peer from the dialog
 3. Files are automatically transferred
 
-### **Receiving Files**
+### Receiving Files
 
-1. **Auto-Start**: File receiving starts automatically in debug mode
-2. **Manual Control**: Use the "Start Receiving" toggle
-3. **Default Location**: Files are saved to your Downloads folder
-4. **Notifications**: Get notified when files are received
+1. Auto-Start: File receiving starts automatically in debug mode
+2. Manual Control: Use the "Start Receiving" toggle
+3. Default Location: Files are saved to your Downloads folder
+4. Notifications: Get notified when files are received
 
-### **Security Features**
+### Security Features
 
-1. **PIN Setup**: Configure your security PIN on first launch
-2. **Trusted Peers**: Approve peers for automatic file acceptance
-3. **Transfer Approval**: Manually approve each file transfer
-4. **Encryption**: All transfers are encrypted by default
+1. PIN Setup: Configure your security PIN on first launch
+2. Trusted Peers: Approve peers for automatic file acceptance
+3. Transfer Approval: Manually approve each file transfer
+4. Encryption: All transfers are encrypted by default
 
 ---
 
-## 🔧 **Configuration**
+## Configuration
 
 ### **Security Settings**
 - **PIN Protection**: Enable/disable device PIN lock
@@ -130,7 +130,7 @@
 
 ---
 
-## 🛠️ **Development**
+## Development
 
 ### **Project Structure**
 ```
@@ -180,7 +180,7 @@ flutter test
 
 ---
 
-## 📊 **Performance**
+## Performance
 
 ### **Benchmarks**
 - **Small Files (<1MB)**: Instant transfer
@@ -197,7 +197,7 @@ flutter test
 
 ---
 
-## 🔒 **Security**
+## Security
 
 ### **Encryption Standards**
 - **Symmetric**: AES-256-GCM with authenticated encryption
@@ -220,7 +220,7 @@ flutter test
 
 ---
 
-## 🤝 **Contributing**
+## Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -230,13 +230,13 @@ flutter test
 
 ---
 
-## 📄 **License**
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 📞 **Support**
+## Support
 
 - **Documentation**: [Full Documentation](docs/)
 - **Issues**: [GitHub Issues](https://github.com/username/stork-p2p/issues)
@@ -244,23 +244,23 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🎯 **Roadmap**
+## Roadmap
 
-### **Current Version (1.0.0)**
-- ✅ Windows desktop application
-- ✅ End-to-end encryption
-- ✅ Multi-file transfers
-- ✅ Modern UI with themes
-- ✅ Transfer history
+### Current Version (1.0.0)
+- Windows desktop application
+- End-to-end encryption
+- Multi-file transfers
+- Modern UI with themes
+- Transfer history
 
-### **Upcoming Features**
-- 🔄 Android application
-- 🔄 macOS application
-- 🔄 Linux application
-- 🔄 Web application (PWA)
-- 🔄 Mobile-specific features (QR codes, NFC)
-- 🔄 App store distributions
+### Upcoming Features
+- Android application
+- macOS application
+- Linux application
+- Web application (PWA)
+- Mobile-specific features (QR codes, NFC)
+- App store distributions
 
 ---
 
-**Made with ❤️ using Flutter**
+**Made with Flutter**
