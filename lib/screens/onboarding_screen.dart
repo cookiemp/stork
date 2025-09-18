@@ -17,6 +17,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   final PageController _pageController = PageController();
   int _currentPage = 0;
   static const int _totalPages = 4;
+  
+  @override
+  void initState() {
+    super.initState();
+    print('🎯 ONBOARDING SCREEN INITIALIZED - User will see onboarding flow!');
+  }
 
   @override
   void dispose() {
@@ -345,7 +351,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 children: [
                   Icon(
                     Icons.tips_and_updates,
-                    color: Theme.of(context).primaryColor,
+                    color: Colors.amber,
                   ),
                   const SizedBox(height: 12),
                   const Text(
